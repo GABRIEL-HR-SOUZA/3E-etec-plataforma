@@ -3,7 +3,7 @@
 ## Plataforma de Vagas - SECITEC
 
 Uma plataforma web moderna desenvolvida para conectar alunos da SECITEC a oportunidades de emprego e estágio publicadas por empresas da região.
-
+https://lovable.dev/projects/da5842de-8387-46af-835e-81cd3c57e60d?magic_link=mc_b2aafa06-d519-4092-a713-1a75549b80d0
 ---
 
 ## 📝 Sobre o Projeto
