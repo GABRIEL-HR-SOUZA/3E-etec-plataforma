@@ -1,0 +1,22 @@
+# Dependências e builds
+node_modules/
+frontend/.angular/
+frontend/dist/
+backend/target/
+
+# Banco SQLite, backups e PDFs privados (gerados ao iniciar o back-end)
+backend/data/
+backend/storage/
+*.db
+*.db-wal
+*.db-shm
+
+# Ambiente / IDE
+.env
+.env.*
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+.claude/settings.local.json

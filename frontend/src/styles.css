@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 218 35% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 218 35% 15%;
+    --primary: 217 66% 32%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 56% 41%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 267 53% 37%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 216 20% 96.5%;
+    --muted-foreground: 216 12% 40%;
+    --border: 216 16% 87%;
+    --input: 216 16% 82%;
+    --ring: 217 66% 32%;
+    --radius: 0.375rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .eyebrow {
+    @apply block text-[13px] font-semibold uppercase tracking-[0.08em] text-[#2E6DA4] mb-1.5;
+  }
+
+  .section-title {
+    @apply font-heading font-bold text-[1.75rem] md:text-[2rem] leading-tight text-foreground;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-md text-[15px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#1C4587] focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn bg-[#1C4587] text-white hover:bg-[#163a73];
+  }
+
+  .btn-verde {
+    @apply btn bg-[#1E7F4A] text-white hover:bg-[#17643a];
+  }
+
+  .btn-outline {
+    @apply btn border border-input bg-white text-foreground hover:bg-muted hover:border-foreground/30;
+  }
+
+  .field {
+    @apply w-full py-2.5 px-3.5 bg-white border border-input rounded-md text-[15px] text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-[#1C4587] focus:ring-2 focus:ring-[#1C4587]/15 transition-colors;
+  }
+
+  .badge {
+    @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-semibold;
+  }
+}
